@@ -1,0 +1,39 @@
+
+<html lang='en'>
+	<head>
+		<title> Alarm Clock</title>
+		<meta charset='UFT-8' name='viewport' content='width=device-width, initial=scale=1.0' >
+		<link rel='stylesheet' type='text/css' href='style.css'>
+
+	</head>
+  <body>
+	<div id="container">
+		<div id='time-display'>
+			<h2 id='clock'></h2>		
+		   <div id='alarm-container'>
+			 <div class="alarm">
+				<label for="alarm-hours">Hours:</label>
+				<input type="number" id="alarm-hours" min="1" max="12">
+				<label for="alarm-minutes">Minutes:</label>
+				<input type="number" id="alarm-minutes" min="0" max="59">
+				<label for="alarm-seconds">Seconds:</label>
+				<input type="number" id="alarm-seconds" min="0" max="59">
+				<label for="alarm-am-pm">AM/PM:</label>
+				<select id="alarm-am-pm">
+					<option value="AM">AM</option>
+					<option value="PM">PM</option>
+				</select>
+				<button onclick="setAlarm()">Set Alarm</button>
+			</div>
+			<div class="alarms">
+				<h2>Upcoming Alarms</h2>
+				<ul id="alarm-list"></ul>
+			</div>
+			<audio id="alarmSound" src="Audio/Maan Meri Jaan(PagalWorld.com.pe).mp3"></audio>
+		   </div>
+		   
+	    </div>
+   </div>
+		<script type='text/javascript' src='Script.js'></script>
+  </body>
+</html>
